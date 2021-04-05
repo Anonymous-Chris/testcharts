@@ -26,24 +26,22 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   );
 };
 
-export default class Example extends PureComponent {
+const CustomTooltip = ({ payload }) => {
+  return (
+    <div>
+      <div className="ant-popover-arrow" />
+      <div className="">
+        <b>{payload?.[0]?.payload?.name}</b>
+        <span className=" ">
+          <p>{payload?.[0]?.payload?.value} </p>
+        </span>
+      </div>
+    </div>
+  );
+};
 
-  render() {
 
-    const CustomTooltip = ({ payload }) => {
-      return (
-        <div>
-          <div className="ant-popover-arrow" />
-          <div className="">
-            <b>{payload?.[0]?.payload?.name}</b>
-            <span className=" ">
-              <p>{payload?.[0]?.payload?.value} %</p>
-            </span>
-          </div>
-        </div>
-      );
-    };
-
+export default function Piechart_custom_label() {
     return (
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
@@ -66,4 +64,4 @@ export default class Example extends PureComponent {
       </ResponsiveContainer>
     );
   }
-}
+
