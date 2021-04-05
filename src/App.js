@@ -1,10 +1,10 @@
 import './App.css';
-import Rechartsbar from './components/Rechartsbar';
+import Rechartsbar from './components/Recharts/Bar/Rechartsbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Table from './components/Table';
-import Piecharts from './components/Piecharts';
-import Piechart2 from './components/Piechart_custom_label';
-import Piechartpopup from './components/Piechart_popup';
+import Table from './components/Table/Table';
+import Piecharts from './components/Recharts/Piecharts/Piecharts';
+import Piechart2 from './components/Recharts/Piecharts/Piechart_custom_label';
+import Piechartpopup from './components/Recharts/Piecharts/Piechart_popup';
 
 function App() {
   return (
