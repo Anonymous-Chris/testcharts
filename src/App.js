@@ -31,13 +31,13 @@ function App() {
       </div>
 
       <div className="row">
-        <div className="col-lg-3 col-md-12 col-sm-12 m-1 heightofAll">
+        <div className="col-lg-4 col-md-12 col-sm-12  heightofAll">
         <Piecharts/>
         </div>
-        <div className="col-lg-4 col-md-12 col-sm-12 m-1 heightofAll" >
+        <div className="col-lg-4 col-md-12 col-sm-12 heightofAll" >
           <Piechart2/>
         </div>
-        <div className="col-lg-4 col-md-12 col-sm-12 m-1 heightofAll" >
+        <div className="col-lg-4 col-md-12 col-sm-12 heightofAll" >
           <Piechartpopup/>
         </div>
       </div>
