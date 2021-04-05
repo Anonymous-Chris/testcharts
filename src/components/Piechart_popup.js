@@ -51,7 +51,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
         startAngle,
         endAngle,
         midAngle,
-        percent
+    
     } = props;
     const sin = Math.sin(-RADIAN * midAngle);
     const cos = Math.cos(-RADIAN * midAngle);
@@ -111,6 +111,7 @@ export default function Piechartpopup() {
           labelLine={false}
           label={renderCustomizedLabel}
           activeShape={renderActiveShape}
+         
           onMouseOver={onMouseOver}
           onMouseLeave={onMouseLeave}
         >

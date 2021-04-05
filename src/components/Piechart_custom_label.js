@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer,Tooltip } from 'recharts';
 
 const data = [
@@ -21,7 +21,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
   return (
     <text className="small" x={x} y={y} fill="white" textAnchor={x > cx ? 'middle' : 'middle'} dominantBaseline="central" >
-      {`${(percent * 100).toFixed(0)}`}
+      {`${(percent * 100).toFixed(0)}%`}
     </text>
   );
 };
@@ -33,7 +33,7 @@ const CustomTooltip = ({ payload }) => {
       <div className="">
         <b>{payload?.[0]?.payload?.name}</b>
         <span className=" ">
-          <p>{payload?.[0]?.payload?.value}% </p>
+          <p>{payload?.[0]?.payload?.value} </p>
         </span>
       </div>
     </div>
