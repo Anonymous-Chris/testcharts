@@ -7,3 +7,11 @@
   pointer-events: none;
 }
 
+
+.heightofAll{
+  height: 36vh;
+}
+
+.table tr{
+  height: 6.2vh;
+}
