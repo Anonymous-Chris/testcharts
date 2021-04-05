@@ -33,7 +33,7 @@ const CustomTooltip = ({ payload }) => {
       <div className="">
         <b>{payload?.[0]?.payload?.name}</b>
         <span className=" ">
-          <p>{payload?.[0]?.payload?.value} </p>
+          <p>{payload?.[0]?.payload?.value}% </p>
         </span>
       </div>
     </div>
