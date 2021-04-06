@@ -1,5 +1,6 @@
 import React from 'react';
 import Scatterplot from '../Scatterplot/Scatterplot';
+import RadarChart from '../RadarChart/RadarChart';
 
 export default class Page2 extends React.Component{
     render(){
@@ -10,7 +11,7 @@ export default class Page2 extends React.Component{
                 <Scatterplot/>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 p-1 heightofAll" >
-            <p>1</p>
+            <RadarChart/>
             </div>
           </div>
     
